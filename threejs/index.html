@@ -12,11 +12,12 @@
 		<h1>Three.js Examples</h1>
 		<button id="button1">Line Triforce</button>
 		<button id="button2">3D Triforce</button>
-		<button id="button3">TROUBLESHOOT</button>
+		<button id="button3">ASCII</button>
 		<button id="button4">Dot Cloud</button>
 
 		<script type="module">
-			// Code pour charger le script sélectionné
+			let createdElements = [];
+
 			const button1 = document.getElementById('button1');
 			const button2 = document.getElementById('button2');
 			const button3 = document.getElementById('button3');
@@ -34,7 +35,7 @@
 
 			button3.addEventListener('click', () => {
 				clearScripts();
-				loadScript('/src/test.js');
+				loadScript('/src/ASCII.js');
 			});
 
 			button4.addEventListener('click', () => {
@@ -42,7 +43,6 @@
 				loadScript('/src/3d_dot_cloud.js');
 			});
 
-			// Fonction pour charger un script
 			function loadScript(scriptUrl) {
 				const script = document.createElement('script');
 				script.type = 'module';
@@ -50,12 +50,15 @@
 				document.body.appendChild(script);
 			}
 
-			// Fonction pour supprimer tous les scripts de la page
 			function clearScripts() {
-				const scripts = document.querySelectorAll('script[type="module"]');
-				for (let i = 0; i < scripts.length; i++) {
-					scripts[i].remove();
+				for (let i = 0; i < createdElements.length; i++) {
+					document.body.removeChild(createdElements[i]);
 				}
+				createdElements = [];
+			}
+
+			function addCreatedElement(element) {
+				createdElements.push(element);
 			}
 		</script>
 	</body>

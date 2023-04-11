@@ -40,9 +40,9 @@ Existing versions :
 
 ```bash
   "line" : A simple line drawing of the triforce in threejs.
-  "3d" : A simple render of a 3d object in threejs. [UNFINISHED]
-  "ascii :  A 3d render of a triforce using postprocessing filter to make it looks like ASCII art. [UNFINISHED]
-  "dot-cloud :  A 3d render of a triforce using 3d dot cloud technique [UNFINISHED]
+  "3d" : A simple render of a 3d object in threejs.
+  "ascii" :  A 3d render of a triforce using postprocessing filter to make it looks like ASCII art.
+  "dot-cloud" :  A 3d render of a triforce using 3d dot cloud technique 
 ```
 ## Authors
 
