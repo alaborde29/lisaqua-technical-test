@@ -22,7 +22,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd lisaqua-technical-test
+  cd lisaqua-technical-test/threejs
 ```
 
 Install dependencies
@@ -31,17 +31,18 @@ Install dependencies
   yarn
 ```
 
-Choose a version to start
+Start the project (click the url in the terminal)
 
 ```bash
-  yarn [version]
+  yarn start
 ```
-Existing [version] : 
+Existing versions : 
 
 ```bash
-  "start-line" : A simple line drawing of the triforce in threejs.
-  "start-3d" : A simple render of a 3d object in threejs. [UNFINISHED]
-  "start-ascii :  A 3d render of a triforce using postprocessing filter to make it looks like ASCII art. [UNFINISHED]
+  "line" : A simple line drawing of the triforce in threejs.
+  "3d" : A simple render of a 3d object in threejs. [UNFINISHED]
+  "ascii :  A 3d render of a triforce using postprocessing filter to make it looks like ASCII art. [UNFINISHED]
+  "dot-cloud :  A 3d render of a triforce using 3d dot cloud technique [UNFINISHED]
 ```
 ## Authors
 
