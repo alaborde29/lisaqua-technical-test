@@ -24,22 +24,18 @@
 			const button4 = document.getElementById('button4');
 
 			button1.addEventListener('click', () => {
-				clearScripts();
 				loadScript('/src/line.js');
 			});
 
 			button2.addEventListener('click', () => {
-				clearScripts();
 				loadScript('/src/3d.js');
 			});
 
 			button3.addEventListener('click', () => {
-				clearScripts();
 				loadScript('/src/ASCII.js');
 			});
 
 			button4.addEventListener('click', () => {
-				clearScripts();
 				loadScript('/src/3d_dot_cloud.js');
 			});
 
@@ -49,14 +45,7 @@
 				script.src = scriptUrl;
 				document.body.appendChild(script);
 			}
-
-			function clearScripts() {
-				for (let i = 0; i < createdElements.length; i++) {
-					document.body.removeChild(createdElements[i]);
-				}
-				createdElements = [];
-			}
-
+			
 			function addCreatedElement(element) {
 				createdElements.push(element);
 			}

@@ -2,7 +2,7 @@
   "name": "lisaqua-technical-test",
   "version": "1.0.0",
   "scripts": {
-    "start": "echo start"
+    "start": "npx vite"
   },
   "dependencies": {
     "three": "^0.151.3"

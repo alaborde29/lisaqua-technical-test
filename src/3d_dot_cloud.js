@@ -15,9 +15,9 @@ scene.add(new THREE.AmbientLight(0x404040))
 const loader = new OBJLoader()
 loader.load('../assets/triforce_UV.obj',
   (obj) => {
-        let material = new THREE.PointsMaterial({ color: 0xffc300, size: 0.25 })
+        let material = new THREE.PointsMaterial({ color: 0xffc300, size: 0.50 })
         mesh = new THREE.Points(obj.children[0].geometry, material)
-        mesh.position.y = -15
+        mesh.position.y = -25
         scene.add(mesh)
         
     },
@@ -29,7 +29,7 @@ loader.load('../assets/triforce_UV.obj',
     }
 )
 
-camera.position.z = 5;
+camera.position.z = 40;
 
 function animate() {
 	requestAnimationFrame( animate );

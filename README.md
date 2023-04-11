@@ -22,7 +22,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd lisaqua-technical-test/threejs
+  cd lisaqua-technical-test
 ```
 
 Install dependencies
